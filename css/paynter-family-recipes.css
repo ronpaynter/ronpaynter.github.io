@@ -5,11 +5,23 @@ body {
   margin: 0; /* Removes default browser margin */
 }
 
-.recipe-container {
-  max-width: 400px; /* Prevents content from getting too wide */
+.index-recipe-container {
+  max-width: 550px; /* Prevents content from getting too wide */
   margin-left: auto; /* Centers the container horizontally */
   margin-right: auto;
   padding: 0 20px; /* Adds some breathing room on smaller screens */
+}
+
+.index-recipe-header {
+  font-size: 24px;
+}
+
+.index-recipe-category {
+  font-size: 22px;
+}
+
+.index-recipe-url {
+  font-size: 20px;
 }
 
 }
