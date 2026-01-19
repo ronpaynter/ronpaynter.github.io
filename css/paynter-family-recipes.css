@@ -7,7 +7,7 @@
 	}
 
 	.index-recipe-container {
-	  max-width: 550px; /* Prevents content from getting too wide */
+	  /* max-width: 550px;  Prevents content from getting too wide */
 	  margin-left: auto; /* Centers the container horizontally */
 	  margin-right: auto;
 	  padding: 0 20px; /* Adds some breathing room on smaller screens */
@@ -36,7 +36,7 @@
 	}
 
 	.recipe-container {
-	  max-width: 720px; /* Prevents content from getting too wide */
+	  /* max-width: 720px;  Prevents content from getting too wide */
 	  margin-left: auto; /* Centers the container horizontally */
 	  margin-right: auto;
 	  padding: 0 20px; /* Adds some breathing room on smaller screens */
@@ -61,10 +61,11 @@
 	
 	body {
 	  margin: 0; /* Removes default browser margin */
-	  background-color: yellow;
+	  background-color: green;
 	}
 	
-	max-width: 940px; /* Prevents content from getting too wide */
+	.recipe-container {
+	  /* max-width: 940px;  Prevents content from getting too wide */
 	  margin-left: auto; /* Centers the container horizontally */
 	  margin-right: auto;
 	  padding: 0 20px; /* Adds some breathing room on smaller screens */
