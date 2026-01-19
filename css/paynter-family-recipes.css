@@ -1,58 +1,105 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-body {
-  margin: 0; /* Removes default browser margin */
-}
+	body {
+	  margin: 0; /* Removes default browser margin */
+	  background-color: lightblue;
+	}
 
-.index-recipe-container {
-  max-width: 550px; /* Prevents content from getting too wide */
-  margin-left: auto; /* Centers the container horizontally */
-  margin-right: auto;
-  padding: 0 20px; /* Adds some breathing room on smaller screens */
-}
+	.index-recipe-container {
+	  max-width: 550px; /* Prevents content from getting too wide */
+	  margin-left: auto; /* Centers the container horizontally */
+	  margin-right: auto;
+	  padding: 0 20px; /* Adds some breathing room on smaller screens */
+	}
 
-.index-recipe-header {
-  font-size: 24px;
-}
+	.index-recipe-header {
+	  font-size: 24px;
+	}
 
-.index-recipe-category {
-  font-size: 22px;
-}
+	.index-recipe-category {
+	  font-size: 22px;
+	}
 
-.index-recipe-url {
-  font-size: 20px;
-}
+	.index-recipe-url {
+	  font-size: 20px;
+	}
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	
-body {
-  margin: 0; /* Removes default browser margin */
-}
+	body {
+	  margin: 0; /* Removes default browser margin */
+	  background-color: blue;
+	}
 
-.recipe-container {
-  max-width: 700px; /* Prevents content from getting too wide */
-  margin-left: auto; /* Centers the container horizontally */
-  margin-right: auto;
-  padding: 0 20px; /* Adds some breathing room on smaller screens */
-}
+	.recipe-container {
+	  max-width: 720px; /* Prevents content from getting too wide */
+	  margin-left: auto; /* Centers the container horizontally */
+	  margin-right: auto;
+	  padding: 0 20px; /* Adds some breathing room on smaller screens */
+	}
+	
+	.index-recipe-header {
+	  font-size: 24px;
+	}
+
+	.index-recipe-category {
+	  font-size: 22px;
+	}
+
+	.index-recipe-url {
+	  font-size: 20px;
+	}
 	
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	
+	body {
+	  margin: 0; /* Removes default browser margin */
+	  background-color: yellow;
+	}
+	
+	max-width: 940px; /* Prevents content from getting too wide */
+	  margin-left: auto; /* Centers the container horizontally */
+	  margin-right: auto;
+	  padding: 0 20px; /* Adds some breathing room on smaller screens */
+	}
+	
+	.index-recipe-header {
+	  font-size: 24px;
+	}
+
+	.index-recipe-category {
+	  font-size: 22px;
+	}
+
+	.index-recipe-url {
+	  font-size: 20px;
+	}
+	
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	
+	body {
+	  margin: 0; /* Removes default browser margin */
+	  background-color: orange;
+	}
+	
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	
+	body {
+	  margin: 0; /* Removes default browser margin */
+	  background-color: red;
+	}
 	
 } 
