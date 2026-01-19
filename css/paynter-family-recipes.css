@@ -14,15 +14,15 @@
 	}
 
 	.index-recipe-header {
-	  font-size: 24px;
+	  font-size: 34px;
 	}
 
 	.index-recipe-category {
-	  font-size: 22px;
+	  font-size: 32px;
 	}
 
 	.index-recipe-url {
-	  font-size: 20px;
+	  font-size: 30px;
 	}
 
 }
@@ -43,15 +43,15 @@
 	}
 	
 	.index-recipe-header {
-	  font-size: 24px;
+	  font-size: 34px;
 	}
 
 	.index-recipe-category {
-	  font-size: 22px;
+	  font-size: 32px;
 	}
 
 	.index-recipe-url {
-	  font-size: 20px;
+	  font-size: 30px;
 	}
 	
 }
@@ -61,7 +61,7 @@
 	
 	body {
 	  margin: 0; /* Removes default browser margin */
-	  /* background-color: yellow; */
+	  background-color: white;
 	}
 	
 	.recipe-container {
@@ -91,6 +91,18 @@
 	body {
 	  margin: 0; /* Removes default browser margin */
 	  background-color: orange;
+	}
+	
+	.index-recipe-header {
+	  font-size: 24px;
+	}
+
+	.index-recipe-category {
+	  font-size: 22px;
+	}
+
+	.index-recipe-url {
+	  font-size: 20px;
 	}
 	
 }
