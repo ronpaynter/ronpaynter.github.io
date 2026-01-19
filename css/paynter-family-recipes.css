@@ -61,7 +61,7 @@
 	
 	body {
 	  margin: 0; /* Removes default browser margin */
-	  background-color: yellow;
+	  /* background-color: yellow; */
 	}
 	
 	.recipe-container {
@@ -101,6 +101,18 @@
 	body {
 	  margin: 0; /* Removes default browser margin */
 	  background-color: red;
+	}
+	
+	.index-recipe-header {
+	  font-size: 24px;
+	}
+
+	.index-recipe-category {
+	  font-size: 22px;
+	}
+
+	.index-recipe-url {
+	  font-size: 20px;
 	}
 	
 } 
