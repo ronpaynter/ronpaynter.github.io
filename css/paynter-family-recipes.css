@@ -8,3 +8,9 @@ body {
   margin-right: auto;
   padding: 0 20px; /* Adds some breathing room on smaller screens */
 }
+.recipe-name {
+	
+}
+.contributed-by {
+	margin-top: -10px;	
+}
