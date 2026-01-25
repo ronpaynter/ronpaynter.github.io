@@ -19,36 +19,81 @@
 </header>
 
 <div class="w3-container">
-  <h5 class="index-recipe-category"><b>Appetizers & Snacks</b></h5>
-  <a href="recipes/Appetizers%20&%20Snacks/Cinnamon%20Roasted%20Almonds.html" class="index-recipe-url">Cinnamon Roasted Almonds</a><br>
-  <a href="recipes/Appetizers%20&%20Snacks/Pretzels.html" class="index-recipe-url">Pretzels</a><br>
-  <h5 class="index-recipe-category"><b>Breakfast</b></h5>
-  <a href="recipes/Breakfast/Griddle%20Cakes.html" class="index-recipe-url">Griddle Cakes</a><br>
-  <a href="recipes/Breakfast/Waffles.html" class="index-recipe-url">Waffles</a><br>
-  <h5 class="index-recipe-category"><b>Cookies</b></h5>
-  <a href="recipes/Cookies/Molasses%20Cookies.html" class="index-recipe-url">Molasses Cookies</a><br>
-  <a href="recipes/Cookies/Peanut%20Blossoms.html" class="index-recipe-url">Peanut Blossoms</a><br>
-  <a href="recipes/Cookies/Sugar%20Cookies.html" class="index-recipe-url">Sugar Cookies</a><br>
-  <h5 class="index-recipe-category"><b>Desserts</b></h5>
-  <a href="recipes/Desserts/Mud%20Pie.html" class="index-recipe-url">Mud Pie</a><br>
-  <a href="recipes/Desserts/Sour%20Cream%20Rolls.html" class="index-recipe-url">Sour Cream Rolls</a><br>
-  <h5 class="index-recipe-category"><b>Entrees</b></h5>
-  <a href="recipes/Entrees/Alfredo%20Sauce.html" class="index-recipe-url">Alfredo Sauce</a><br>
-  <a href="recipes/Entrees/Bread%20Machine%20Calzone.html" class="index-recipe-url">Bread Machine Calzone</a><br>
-  <a href="recipes/Entrees/Chicken%20Enchiladas.html" class="index-recipe-url">Chicken Enchiladas</a><br>
-  <a href="recipes/Entrees/Crab%20and%20Shrimp%20Stuffed%20Shells.html" class="index-recipe-url">Crab and Shrimp Stuffed Shells</a><br>
-  <a href="recipes/Entrees/Pizza%20Dough.html" class="index-recipe-url">Pizza Dough</a><br>
-  <h5 class="index-recipe-category"><b>Ice Cream</b></h5>
-  <a href="recipes/Ice%20Cream/Mint%20Chocolate%20Chip%20Ice%20Cream.html" class="index-recipe-url">Mint Chocolate Chip Ice Cream</a><br>
-  <h5 class="index-recipe-category"><b>Side Dishes</b></h5>
-  <a href="recipes/Side%20Dishes/Broccoli%20Casserole.html" class="index-recipe-url">Broccoli Casserole</a><br>
-  <h5 class="index-recipe-category"><b>Soups, Stews, and Chili</b></h5>
-  <a href="recipes/Soups,%20Stews,%20and%20Chili/Crock%20Pot%20Chicken%20&%20Dumplings.html" class="index-recipe-url">Crock Pot Chicken & Dumplings</a><br>
-  <a href="recipes/Soups,%20Stews,%20and%20Chili/Potato%20Soup.html" class="index-recipe-url">Potato Soup</a><br>
+
+  <h5><button onclick="toggleShowRecipes('Appetizers&amp;Snacks')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Appetizers &amp; Snacks</button></h5>
+
+  <div id="Appetizers&amp;Snacks" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/Appetizers&amp;amp;Snacks/CinnamonRoastedAlmonds.html" class="index-recipe-url">Cinnamon Roasted Almonds</a><br>
+  	<a href="recipes/Appetizers&amp;amp;Snacks/Pretzels.html" class="index-recipe-url">Pretzels</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('Breakfast')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Breakfast</button></h5>
+
+  <div id="Breakfast" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/Breakfast/GriddleCakes.html" class="index-recipe-url">Griddle Cakes</a><br>
+  	<a href="recipes/Breakfast/Waffles.html" class="index-recipe-url">Waffles</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('Cookies')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Cookies</button></h5>
+
+  <div id="Cookies" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/Cookies/MolassesCookies.html" class="index-recipe-url">Molasses Cookies</a><br>
+  	<a href="recipes/Cookies/PeanutBlossoms.html" class="index-recipe-url">Peanut Blossoms</a><br>
+  	<a href="recipes/Cookies/SugarCookies.html" class="index-recipe-url">Sugar Cookies</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('Desserts')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Desserts</button></h5>
+
+  <div id="Desserts" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/Desserts/MudPie.html" class="index-recipe-url">Mud Pie</a><br>
+  	<a href="recipes/Desserts/SourCreamRolls.html" class="index-recipe-url">Sour Cream Rolls</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('Entrees')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Entrees</button></h5>
+
+  <div id="Entrees" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/Entrees/AlfredoSauce.html" class="index-recipe-url">Alfredo Sauce</a><br>
+  	<a href="recipes/Entrees/BreadMachineCalzone.html" class="index-recipe-url">Bread Machine Calzone</a><br>
+  	<a href="recipes/Entrees/ChickenEnchiladas.html" class="index-recipe-url">Chicken Enchiladas</a><br>
+  	<a href="recipes/Entrees/CrabandShrimpStuffedShells.html" class="index-recipe-url">Crab and Shrimp Stuffed Shells</a><br>
+  	<a href="recipes/Entrees/PizzaDough.html" class="index-recipe-url">Pizza Dough</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('IceCream')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Ice Cream</button></h5>
+
+  <div id="IceCream" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/IceCream/MintChocolateChipIceCream.html" class="index-recipe-url">Mint Chocolate Chip Ice Cream</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('SideDishes')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Side Dishes</button></h5>
+
+  <div id="SideDishes" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/SideDishes/BroccoliCasserole.html" class="index-recipe-url">Broccoli Casserole</a><br>
+  </div>
+
+  <h5><button onclick="toggleShowRecipes('Soups,Stews,andChili')" class="w3-button w3-block w3-left-align w3-light-blue w3-round-large index-recipe-category">Soups, Stews, and Chili</button></h5>
+
+  <div id="Soups,Stews,andChili" class="w3-hide w3-container w3-animate-left">
+  	<a href="recipes/Soups,Stews,andChili/CrockPotChicken&amp;amp;Dumplings.html" class="index-recipe-url">Crock Pot Chicken &amp; Dumplings</a><br>
+  	<a href="recipes/Soups,Stews,andChili/PotatoSoup.html" class="index-recipe-url">Potato Soup</a><br>
+  </div>
+
   <p></p>
+
 </div>
 
 </div>
+
+<script>
+function toggleShowRecipes(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 
