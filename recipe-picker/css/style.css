@@ -1,0 +1,16 @@
+
+h1 {
+	font-size: 80px;
+    font-weight: bold;
+}
+
+input[type='checkbox']+label {
+	padding-left: .5em;
+}
+
+#recipes li {
+	font-size: 30px;
+	float: left;
+	width: 50%;
+	vertical-align: middle;
+}
