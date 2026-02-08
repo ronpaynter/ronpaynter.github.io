@@ -14,7 +14,7 @@
   <body class="w3-container">
 
 <div id="recipes">
-    <h1>Categories <input type="checkbox" class="checkAll" checked /></h1>
+    <h1>Categories <input id="category-checkbox" type="checkbox" class="checkAll" checked hidden /></h1>
     <div id="types"></div>
     <h2 hidden>Recipes <input type="checkbox" class="checkAll" checked hidden /></h2>
     <div id="name" hidden></div>
@@ -425,6 +425,7 @@
           $recipes.slideDown().data("open", true);
         }
       });
+	  $recipes.slideDown().data("open", true);  // Open up Categories by default 
   
       $('.checkAll').on("click", function() {
         $(this).parent().next('div').find('input').prop('checked', $(this).prop('checked')).trigger("change");
