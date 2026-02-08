@@ -13,6 +13,9 @@
 	  "name": "Uncle Bob's French Toast",
 	  "type": "Breakfast"
 	}, {
+	  "name": "Waffle House Waffles",
+	  "type": "Breakfast"
+	}, {
 	  "name": "Waffles",
 	  "type": "Breakfast"
 	}, {
@@ -28,7 +31,16 @@
 	  "name": "Sugar Cookies",
 	  "type": "Cookies"
 	}, {
+	  "name": "Blackberry Cobbler",
+	  "type": "Desserts"
+	}, {
+	  "name": "Mom's Apple Dumplings",
+	  "type": "Desserts"
+	}, {
 	  "name": "Mud Pie",
+	  "type": "Desserts"
+	}, {
+	  "name": "Pecan Pie",
 	  "type": "Desserts"
 	}, {
 	  "name": "Sour Cream Rolls",
