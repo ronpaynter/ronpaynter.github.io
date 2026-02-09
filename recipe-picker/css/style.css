@@ -1,7 +1,14 @@
 
 h1 {
-	font-size: 80px;
+	/* font-size: 80px; */
     font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	/* font-size: 80px; */
+    font-weight: bold;
+	text-align: center;
 }
 
 /**
@@ -28,7 +35,7 @@ input[type="checkbox"] {
 }
 
 #recipes li {
-	font-size: 50px;
+	font-size: 20px;
 	float: left;
 	width: 50%;
 	vertical-align: middle;
@@ -41,4 +48,39 @@ input[type="checkbox"] {
 
 #canvas {
 	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	h1 {
+		/* font-size: 40px; */
+	}
+	
+	#picker-header {
+		margin-top: 0px;
+		margin-bottom: -15px;
+	}
+	
+	input[type="checkbox"] {
+		/* Scale the checkbox by 3 times its original size */
+		transform: scale(2);
+		/* Add vendor prefixes for maximum compatibility */
+		-ms-transform: scale(2);      /* IE 9+ */
+		-moz-transform: scale(2);     /* Firefox */
+		-webkit-transform: scale(2);  /* Safari and Chrome */
+		-o-transform: scale(2);       /* Opera */
+		/* Add margin to prevent overlapping with adjacent text/elements */
+		margin-left: -30px;
+		margin-right: 10px;
+		margin-top: 10px;
+		/* Other styling */
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#recipes li {
+		font-size: 20px;
+		width: 100%;
+	}
+	
 }
