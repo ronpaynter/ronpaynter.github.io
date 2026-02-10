@@ -19,8 +19,6 @@
     <div id="name" hidden></div>
 </div>
 
-<!-- <div id="filterToggle">. . .</div> -->
-
 <h4>&nbsp</h4>
 
 <div id="picker-header-2"><h4>Tap Wheel To Spin</h4></div>
@@ -39,10 +37,6 @@
 	  const recipe = recipe_urls.find(item => item.name === name);
 	  return recipe ? recipe.url : null;
 	}
-
-	// Usage
-	const url = getRecipeUrlByName("Potato Soup");
-	console.log(url); // "Soups,Stews,andChili/PotatoSoup"
 	
   (function($) {
   
@@ -181,7 +175,8 @@
       initAudio: function() {
         var sound = document.createElement('audio');
         var sound2 = document.createElement('audio');
-        sound.setAttribute('src', 'sounds/wheel-spin.mp3');
+        //sound.setAttribute('src', 'sounds/wheel-spin.mp3');
+		sound.setAttribute('src', 'sounds/wheel-spin.ogg');
         sound2.setAttribute('src', 'sounds/tada.mp3');
         wheel.sound = sound;
         wheel.sound2 = sound2;
@@ -262,8 +257,6 @@
         ctx.font = "2em Arial";
         winner = wheel.segments[i] || 'Choose at least 1 Venue';
         ctx.fillText(winner, centerSize + 20, centerY);
-		//winnerHref = winner + '';
-		//recipePathAndPage = 'Breakfast/GriddleCakes';
 		const recipePathAndPage = getRecipeUrlByName(winner);
 		winnerHref = '<a href="../recipes/' + recipePathAndPage + '.html" class="index-recipe-url">' + winner +'</a>';
 		document.getElementById("picker-winner").innerHTML = winnerHref;
