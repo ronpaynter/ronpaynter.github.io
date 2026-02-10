@@ -19,6 +19,10 @@ h4 {
 	text-align: center;
 }
 
+#picker-winner {
+	text-align: center;
+}
+
 /**
 input[type='checkbox']+label {
 	padding-left: .5em;
@@ -56,6 +60,7 @@ input[type="checkbox"] {
 
 #canvas {
 	width: 100%;
+	/* border: 1px solid black; */
 }
 
 @media only screen and (max-width: 768px) {
