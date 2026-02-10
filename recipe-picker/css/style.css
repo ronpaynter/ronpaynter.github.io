@@ -112,4 +112,13 @@ input[type="checkbox"] {
 		width: 100%;
 	}
 	
+	#picker-header-2 {
+		margin-top: -35px;
+	}
+	
+	#picker-winner {
+		margin-top: -10px;
+		margin-bottom: 10px;
+	}
+	
 }

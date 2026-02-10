@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <title>Recipe Picker</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="js/recipes.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/recipes.js"></script>
+	<script src="js/recipe_urls.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 	<link rel="stylesheet" href="../css/paynter-family-recipes.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body class="w3-container">
 
 <div id="recipes">
-    <h3 id="picker-header">Choose Categories<input id="category-checkbox" type="checkbox" class="checkAll" checked hidden /></h3>
+    <h3 id="picker-header">Choose Categories<input id="category-checkbox" type="checkbox" class="checkAll" checked hidden></h3>
     <div id="types"></div>
-    <h2 hidden>Recipes <input type="checkbox" class="checkAll" checked hidden /></h2>
+    <h2 hidden>Recipes <input type="checkbox" class="checkAll" checked hidden></h2>
     <div id="name" hidden></div>
 </div>
 
 <!-- <div id="filterToggle">. . .</div> -->
 
-<h4 id="picker-header-2">Tap Wheel To Spin</h4>
+<h4>&nbsp</h4>
+
+<div id="picker-header-2"><h4>Tap Wheel To Spin</h4></div>
 
 <div id="picker-winner"></div>
 
@@ -34,6 +34,16 @@
 <div id="counter"></div>
 
   <script>
+  
+  	function getRecipeUrlByName(name) {
+	  const recipe = recipe_urls.find(item => item.name === name);
+	  return recipe ? recipe.url : null;
+	}
+
+	// Usage
+	const url = getRecipeUrlByName("Potato Soup");
+	console.log(url); // "Soups,Stews,andChili/PotatoSoup"
+	
   (function($) {
   
     // Helpers
@@ -252,7 +262,11 @@
         ctx.font = "2em Arial";
         winner = wheel.segments[i] || 'Choose at least 1 Venue';
         ctx.fillText(winner, centerSize + 20, centerY);
-		document.getElementById("picker-winner").innerHTML = winner;
+		//winnerHref = winner + '';
+		//recipePathAndPage = 'Breakfast/GriddleCakes';
+		const recipePathAndPage = getRecipeUrlByName(winner);
+		winnerHref = '<a href="../recipes/' + recipePathAndPage + '.html" class="index-recipe-url">' + winner +'</a>';
+		document.getElementById("picker-winner").innerHTML = winnerHref;
       },
   
       drawSegment: function(key, lastAngle, angle) {
@@ -337,8 +351,8 @@
         $venueName = $('#name'),
         $venueType = $('#types'),
         venueTypes = [],
-        $list = $('<ul/>'),
-        $types = $('<ul/>'),
+        $list = $('<ul>'),
+        $types = $('<ul>'),
         $filterToggler = $('#filterToggle'),
         arrayUnique = function(a) {
           return a.reduce(function(p, c) {
@@ -351,9 +365,9 @@
   
       $.each(recipes, function(index, venue) {
         $list.append(
-          $("<li/>")
+          $("<li>")
           .append(
-            $("<input />").attr({
+            $("<input>").attr({
               id: 'venue-' + index,
               name: venue.name,
               value: venue.name,
@@ -376,7 +390,7 @@
             })
   
           ).append(
-            $('<label />').attr({
+            $('<label>').attr({
               'for': 'venue-' + index
             })
             .text(venue.name)
@@ -386,9 +400,9 @@
       });
       $.each(arrayUnique(venueTypes), function(index, venue) {
         $types.append(
-          $("<li/>")
+          $("<li>")
           .append(
-            $("<input />").attr({
+            $("<input>").attr({
               id: 'venue-type-' + index,
               name: venue,
               value: venue,
@@ -406,7 +420,7 @@
             })
   
           ).append(
-            $('<label />').attr({
+            $('<label>').attr({
               'for': 'venue-' + index
             })
             .text(venue)
